@@ -1,6 +1,5 @@
 usedList = []
 gameEnded = False
-playerX = True
 
 def printBoard(board):
     """Prints out the board with a lenght and height of 3"""
@@ -69,7 +68,7 @@ def checkTie(board):
     return True
 
 def playAgain():
-    """Asks if """
+    """Asks if user wants to play again"""
     while True:
         response = input("Play again? (Y/N): ").strip().upper()
         if response == "Y":

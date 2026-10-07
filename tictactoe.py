@@ -1,5 +1,6 @@
 usedList = []
 gameEnded = False
+playerX = True
 
 def printBoard(board):
     """Prints out the board with a lenght and height of 3"""
@@ -83,6 +84,7 @@ def initializeBoard(size=3):
     return [["-" for _ in range(size)] for _ in range(size)]
 
 while True:
+    gameEnded = False
     board = initializeBoard()
     printBoard(board)
     while not gameEnded:
